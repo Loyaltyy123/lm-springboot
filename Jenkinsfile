@@ -48,7 +48,7 @@ pipeline {
           // Stop & remove old container if exists
           sh 'docker rm -f springboot-demo || true'
           // Run new container mapping host 8081 -> container 8080
-          sh 'docker run -d --name springboot-demo -p 8081:8080 ${DOCKERHUB_REPO}:latest'
+          sh 'docker run -d --name springboot-demo -p 8081:8081 ${DOCKERHUB_REPO}:latest'
         }
       }
     }
