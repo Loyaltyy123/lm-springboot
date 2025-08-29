@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 public class MyController {
-	@GetMapping("/req11")
+	@GetMapping("/req1")
 	public String getMsg() {
 		return "welcome to spring boot CI/CD Pipeline";
 	}
