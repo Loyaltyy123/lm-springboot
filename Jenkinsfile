@@ -5,9 +5,9 @@ pipeline {
     DOCKERHUB_REPO = 'loyalty082/lm-springboot'   // <-- change
   }
 
-  triggers {
+  //triggers {
     // Webhook will trigger via GitHub; having pollSCM off is fine
-  }
+  //}
 
   stages {
     stage('Checkout') {
